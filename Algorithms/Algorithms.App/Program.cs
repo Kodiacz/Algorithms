@@ -1,7 +1,7 @@
 ﻿//CustomLinkedListTest();
 //BlockingQueTest();
 
-const int size = 10000;
+const int size = 100_000;
 const string worstCase = "worst case";
 const string bestCase = "best case";
 const string averageCase = "average case";
@@ -9,49 +9,50 @@ const string averageCase = "average case";
 //BubblesortTest();
 //SellectionSortTest();
 //InsertionSortTest();
-//ShellSortTest();
+ShellSortTest();
 QucicksortTest();
 
 //var test = BenchmarkRunner.Run<BenchmarkSortingAlgorithms>();
 
 void QucicksortTest()
 {
-	//List<int> randomItems = new List<int>();
-	//List<int> sortedItems = new List<int>();
-	//List<int> reversedItems = new List<int>();
-	//var rnd = new Random();
+	List<int> randomItems = new List<int>();
+	List<int> sortedItems = new List<int>();
+	List<int> reversedItems = new List<int>();
+	var rnd = new Random();
 
-	//for (int i = 1; i <= size; i++)
-	//{
-	//	randomItems.Add(rnd.Next());
-	//}
+	for (int i = 1; i <= size; i++)
+	{
+		randomItems.Add(rnd.Next());
+	}
 
-	//for (int i = 0; i < size; i++)
-	//{
-	//	sortedItems.Add(i);
-	//}
+	for (int i = 0; i < size; i++)
+	{
+		sortedItems.Add(i);
+	}
 
-	//for (int i = size; i > 0; i--)
-	//{
-	//	reversedItems.Add(i);
-	//}
+	for (int i = size; i > 0; i--)
+	{
+		reversedItems.Add(i);
+	}
 
-	//var comparator = new CallCountComparator<int>();
-	//var shellSort = new ShellSort<int>(comparator);
-	//var shellSortMethod = shellSort.Sort;
-
-	//RunMethod(shellSortMethod, sortedItems, comparator, nameof(shellSortMethod), bestCase);
-
-	//RunMethod(shellSortMethod, randomItems, comparator, nameof(shellSortMethod), averageCase);
-
-	//RunMethod(shellSortMethod, reversedItems, comparator, nameof(shellSortMethod), worstCase);
-
-	//Console.WriteLine($"End of {nameof(InsertionSortTest)}");
-
-	List<int> nums = new List<int>() {8, 2, 4, 7, 1, 3, 9, 6, 5};
 	var comparator = new CallCountComparator<int>();
 	var quicksort = new Quicksort<int>(comparator);
-	var test = quicksort.Sort(nums);
+	var quicksortMethod = quicksort.Sort;
+
+	RunMethod(quicksortMethod, sortedItems, comparator, nameof(quicksortMethod), bestCase);
+
+	RunMethod(quicksortMethod, randomItems, comparator, nameof(quicksortMethod), averageCase);
+
+	RunMethod(quicksortMethod, reversedItems, comparator, nameof(quicksortMethod), worstCase);
+
+	Console.WriteLine($"End of {nameof(QucicksortTest)}");
+
+	//List<int> nums = new List<int>() {8, 2, 4, 7, 1, 3, 9, 6, 5};
+	//var comparator = new CallCountComparator<int>();
+	//var quicksort = new Quicksort<int>(comparator);
+	//var test = quicksort.Sort(nums);
+	//Console.WriteLine(string.Join(" ", test));
 }
 
 void ShellSortTest()
