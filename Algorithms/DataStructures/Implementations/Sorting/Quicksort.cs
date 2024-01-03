@@ -1,4 +1,6 @@
-﻿namespace DataStructures.Implementations.Sorting
+﻿using System.Runtime.CompilerServices;
+
+namespace DataStructures.Implementations.Sorting
 {
 	public class Quicksort<T> : IListSorter<T>
 	{
@@ -94,6 +96,89 @@
 			}
 
 			return left;
+		}
+
+		private void ChatGPTQuicksort(IList<T> array, int low, int high) 
+		{
+			if (low < high)
+			{
+				int partitionIndex = ChatGPTPartition(array, low, high);
+
+				ChatGPTQuicksort(array, low, partitionIndex - 1);
+				ChatGPTQuicksort(array, partitionIndex + 1, high);
+			}
+		}
+
+		private int ChatGPTPartition(IList<T> array, int low, int high) 
+		{
+			T pivot = array[high];
+			int i = low - 1;
+
+			for (int j = low; j < high; j++)
+			{
+				if (this.comparer.Compare(array[j], pivot) <= 0)
+				{
+					i++;
+					Swap(array, i, j);
+				}
+			}
+
+			Swap(array, i + 1, high);
+			return i + 1;
+		}
+
+		public void GPTQuicksortV2(IList<T> array, int left, int right)
+		{
+			if (left < right)
+			{
+				// Partition the array, and get the index of the pivot element
+				int pivotIndex = GPTPartitionV2(array, left, right);
+
+				// Recursively sort the subarrays
+				if (pivotIndex > 0)
+				{
+					GPTQuicksortV2(array, left, pivotIndex - 1);
+				}
+
+				GPTQuicksortV2(array, pivotIndex + 1, right);
+			}
+		}
+
+		private int GPTPartitionV2(IList<T> array, int left, int right)
+		{
+			T pivot = array[left];
+			int i = left + 1;
+			int j = right;
+
+			while (i <= j)
+			{
+				// Find element greater than pivot
+				while (i <= j && this.comparer.Compare(array[i], pivot) <= 0)
+				{
+					i++;
+				}
+
+				// Find element less than pivot
+				while (i <= j && this.comparer.Compare(array[j], pivot) > 0)
+				{
+					j--;
+				}
+
+				// Swap elements if found
+				if (i < j)
+				{
+					T temp = array[i];
+					array[i] = array[j];
+					array[j] = temp;
+				}
+			}
+
+			// Swap pivot with j
+			T tempPivot = array[left];
+			array[left] = array[j];
+			array[j] = tempPivot;
+
+			return j;
 		}
 
 		private void Swap<T>(IList<T> list, int left, int right)

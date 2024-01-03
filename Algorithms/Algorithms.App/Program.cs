@@ -1,7 +1,7 @@
 ﻿//CustomLinkedListTest();
 //BlockingQueTest();
 
-const int size = 100_000;
+const int size = 10_000;
 const string worstCase = "worst case";
 const string bestCase = "best case";
 const string averageCase = "average case";
@@ -87,7 +87,7 @@ void ShellSortTest()
 
 	RunMethod(shellSortMethod, reversedItems, comparator, nameof(shellSortMethod), worstCase);
 
-	Console.WriteLine($"End of {nameof(InsertionSortTest)}");
+	Console.WriteLine($"End of {nameof(ShellSortTest)}");
 }
 
 void InsertionSortTest()
