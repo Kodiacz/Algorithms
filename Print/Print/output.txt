@@ -1,0 +1,57 @@
+<data name="PPCPath" xml:space="preserve">
+	<value>//PPCPath</value>
+</data>
+<data name="PPUsername" xml:space="preserve">
+	<value>//PPUsername</value>
+</data>
+<data name="PPPassword" xml:space="preserve">
+	<value>//PPPassword</value>
+</data>
+<data name="PPLogonType" xml:space="preserve">
+	<value>//PPLogonType</value>
+</data>
+<data name="PPDefaultResource" xml:space="preserve">
+	<value>//PPDefaultResource</value>
+</data>
+<data name="PPProposal1011" xml:space="preserve">
+	<value>//PPProposal1011</value>
+</data>
+<data name="PPProposal1016" xml:space="preserve">
+	<value>//PPProposal1016</value>
+</data>
+<data name="PPSave1011" xml:space="preserve">
+	<value>//PPSave1011</value>
+</data>
+<data name="PPSave1016" xml:space="preserve">
+	<value>//PPSave1016</value>
+</data>
+<data name="PPProposalDate" xml:space="preserve">
+	<value>//PPProposalDate</value>
+</data>
+<data name="ImportPart" xml:space="preserve">
+	<value>//ImportPart</value>
+</data>
+<data name="ImportAssem" xml:space="preserve">
+	<value>//ImportAssem</value>
+</data>
+<data name="ImportAssoc" xml:space="preserve">
+	<value>//ImportAssoc</value>
+</data>
+<data name="ImportVendor" xml:space="preserve">
+	<value>//ImportVendor</value>
+</data>
+<data name="ImportBOM" xml:space="preserve">
+	<value>//ImportBOM</value>
+</data>
+<data name="ImportCosts" xml:space="preserve">
+	<value>//ImportCosts</value>
+</data>
+<data name="ImportProps" xml:space="preserve">
+	<value>//ImportProps</value>
+</data>
+<data name="ImportConds" xml:space="preserve">
+	<value>//ImportConds</value>
+</data>
+<data name="ImportRepair" xml:space="preserve">
+	<value>//ImportRepair</value>
+</data>

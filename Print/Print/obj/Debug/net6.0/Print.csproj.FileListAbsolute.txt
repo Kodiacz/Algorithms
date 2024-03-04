@@ -1,0 +1,14 @@
+C:\Users\SimeonJordanov\Personal-Folder\Основи-на-алгоритмите\Print\Print\bin\Debug\net6.0\Print.exe
+C:\Users\SimeonJordanov\Personal-Folder\Основи-на-алгоритмите\Print\Print\bin\Debug\net6.0\Print.deps.json
+C:\Users\SimeonJordanov\Personal-Folder\Основи-на-алгоритмите\Print\Print\bin\Debug\net6.0\Print.runtimeconfig.json
+C:\Users\SimeonJordanov\Personal-Folder\Основи-на-алгоритмите\Print\Print\bin\Debug\net6.0\Print.dll
+C:\Users\SimeonJordanov\Personal-Folder\Основи-на-алгоритмите\Print\Print\bin\Debug\net6.0\Print.pdb
+C:\Users\SimeonJordanov\Personal-Folder\Основи-на-алгоритмите\Print\Print\obj\Debug\net6.0\Print.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\SimeonJordanov\Personal-Folder\Основи-на-алгоритмите\Print\Print\obj\Debug\net6.0\Print.AssemblyInfoInputs.cache
+C:\Users\SimeonJordanov\Personal-Folder\Основи-на-алгоритмите\Print\Print\obj\Debug\net6.0\Print.AssemblyInfo.cs
+C:\Users\SimeonJordanov\Personal-Folder\Основи-на-алгоритмите\Print\Print\obj\Debug\net6.0\Print.csproj.CoreCompileInputs.cache
+C:\Users\SimeonJordanov\Personal-Folder\Основи-на-алгоритмите\Print\Print\obj\Debug\net6.0\Print.dll
+C:\Users\SimeonJordanov\Personal-Folder\Основи-на-алгоритмите\Print\Print\obj\Debug\net6.0\refint\Print.dll
+C:\Users\SimeonJordanov\Personal-Folder\Основи-на-алгоритмите\Print\Print\obj\Debug\net6.0\Print.pdb
+C:\Users\SimeonJordanov\Personal-Folder\Основи-на-алгоритмите\Print\Print\obj\Debug\net6.0\Print.genruntimeconfig.cache
+C:\Users\SimeonJordanov\Personal-Folder\Основи-на-алгоритмите\Print\Print\obj\Debug\net6.0\ref\Print.dll

@@ -1,0 +1,27 @@
+﻿ppcfg.SelectSingleNode("//PPCPath").InnerText;
+ppUser = ppcfg.SelectSingleNode("//PPUsername").InnerText;
+ppPass = ppcfg.SelectSingleNode("//PPPassword").InnerText;
+string lgType = ppcfg.SelectSingleNode("//PPLogonType").InnerText;
+ppDefaultRes = ppcfg.SelectSingleNode("//PPDefaultResource").InnerText;
+ppProp1011 = ppcfg.SelectSingleNode("//PPProposal1011").InnerText;
+ppProp1016 = ppcfg.SelectSingleNode("//PPProposal1016").InnerText;
+pp1011Save = ppcfg.SelectSingleNode("//PPSave1011").InnerText;
+pp1016Save = ppcfg.SelectSingleNode("//PPSave1016").InnerText;
+ppPropDate = ppcfg.SelectSingleNode("//PPProposalDate").InnerText;
+Console.WriteLine("Configuring Login Type.");
+foreach (LogonType logType in Enum.GetValues(typeof(LogonType)))
+{
+	if (lgType == logType.GetName())
+	{
+		ppLogType = logType;
+	}
+}
+impParts = (ppcfg.SelectSingleNode("//ImportPart").InnerText == "Checked") ? true : false;
+impAssem = (ppcfg.SelectSingleNode("//ImportAssem").InnerText == "Checked") ? true : false;
+impAssoc = (ppcfg.SelectSingleNode("//ImportAssoc").InnerText == "Checked") ? true : false;
+impVendor = (ppcfg.SelectSingleNode("//ImportVendor").InnerText == "Checked") ? true : false;
+impBOM = (ppcfg.SelectSingleNode("//ImportBOM").InnerText == "Checked") ? true : false;
+impCosts = (ppcfg.SelectSingleNode("//ImportCosts").InnerText == "Checked") ? true : false;
+impProps = (ppcfg.SelectSingleNode("//ImportProps").InnerText == "Checked") ? true : false;
+impConds = (ppcfg.SelectSingleNode("//ImportConds").InnerText == "Checked") ? true : false;
+impRepair = (ppcfg.SelectSingleNode("//ImportRepair").InnerText == "Checked") ? true : false;
